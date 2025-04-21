@@ -64,6 +64,7 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
 
+   /* curriculo */
   .curriculo-container {
     max-width: 700px;
     margin: 80px auto;
@@ -98,5 +99,70 @@ body {
   .curriculo-btn:hover {
     background-color: #005f52;
   }
+
+  /* Serviços */
+.servicos-container {
+  max-width: 800px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.servicos-titulo {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.servicos-descricao {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.tabela-wrapper {
+  overflow-x: auto;
+}
+
+.tabela-servicos {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.tabela-servicos th,
+.tabela-servicos td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.tabela-servicos th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tabela-servicos tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .servicos-container {
+    padding: 20px;
+  }
+
+  .tabela-servicos {
+    font-size: 0.9rem;
+  }
+
+  .tabela-servicos th,
+  .tabela-servicos td {
+    padding: 10px 8px;
+  }
+}
 
   
