@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 40px;">
+  <section id="contato" style="max-width: 700px; margin: auto; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <h1 style="text-align: center; color: #00796B;">📞 Contato</h1>
+    <form id="form-contato" action="https://formsubmit.co/PiresDev0@gmail.com" method="POST">
+      <!-- Proteções e redirecionamento -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="obrigado.html">
+
+      <label style="display: block; margin-top: 15px;">Nome completo:</label>
+      <input type="text" name="nome" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label style="display: block; margin-top: 15px;">Telefone:</label>
+      <input type="tel" name="telefone" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label style="display: block; margin-top: 15px;">Email:</label>
+      <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label style="display: block; margin-top: 15px;">Você é:</label>
+      <label><input type="radio" name="tipo" value="fisica"> Pessoa Física</label>
+      <label><input type="radio" name="tipo" value="juridica"> Pessoa Jurídica</label>
+
+      <label style="display: block; margin-top: 15px;">Melhor horário para contato:</label>
+      <select name="horario" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+      </select>
+
+      <label style="display: block; margin-top: 15px;">Tipo de serviço:</label>
+      <label><input type="checkbox" name="servico" value="estatico"> Estático</label><br>
+      <label><input type="checkbox" name="servico" value="dinamico"> Dinâmico</label><br>
+      <label><input type="checkbox" name="servico" value="avancado"> Avançado</label>
+
+      <label style="display: block; margin-top: 15px;">Descrição:</label>
+      <textarea name="descricao" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+      <button type="submit" style="margin-top: 20px; background-color: #00796B; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+    </form>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>
